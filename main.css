@@ -2,6 +2,7 @@
     margin-left:150px;
     
 }
+
 #page{
     margin:10px auto;
     width: 710px;
@@ -28,22 +29,29 @@
     width: 560px;
 }
 
-
+/* Table decorations*/
 .table,th, td{
     border: 1px solid black;
     border-collapse: collapse;
     padding: 5px;
 }
 
-h1{
+caption{
     text-align: center;
     color: darkslateblue
 }
 
+.input{
+    width: 135px;
+}
 
+/* Footer decorations*/
 #footer{
     margin-top: 5em;
     border-top: 2px solid grey;
     padding-top: 7em;
     clear: left;
+}
+.copyright{
+    float: right;
 }

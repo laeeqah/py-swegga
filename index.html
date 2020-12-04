@@ -28,40 +28,78 @@
             <form>
                 <table class = "table">
                     <caption>Product Summary</captions>
-                    <tr class = "heading">
+                    <tr>
                         <th>Description</th>
                         <th>Size</th>
-
                         <th>Colour</th>
                         <th>Price</th>
                         <th>Quantity</th>
                         <th>Total</th>
                     </tr>
                     <tr>
-                        <td>Female Ski Jacket</td>
-                    </tr>
-                    <tr>
-                        <td>Male Ski Jackets</td>
-                    </tr>
-                    <tr>
+                        <td><a href = "female.html">Female Ski Jacket</a></td>
                         <td>
                             <select name="size" class = "dropdown">
-                                <option value = "lmall">Small</option>
+                                <option value = "small">Small</option>
                                 <option value = "medium">Medium</option>
                                 <option value = "large">Large</option>
                             </select>
                         </td>
+                        <td>
+                            <select name = "color" class ="color">
+                                <option value = "red">Red</option>
+                                <option value = "pink">Pink</option>
+                                <option value = "black">Black</option>
+                            </select>
+                        </td>
+                        <td>R 150.95</td>
+                        <td>
+                            <input class = "input" type ="text">
+                        </td>
+                        <td>
+                            <input type = "text" value = "cal">
+                        </td>
                     </tr>
-                    
-                    
 
+                    <tr>
+                        <td><a href = "male.html">Male Ski Jackets</a></td>
+                    <td>
+                        <select name="size" class = "dropdown">
+                            <option value = "lmall">Small</option>
+                            <option value = "medium">Medium</option>
+                            <option value = "large">Large</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name = "color" class ="color">
+                            <option value = "red">Red</option>
+                            <option value = "blue">Blue</option>
+                            <option value = "white">White</option>
+                        </select>
+                    </td>
+                    <td>R180.95</td>
+                    <td>
+                        <input class = "input" type = "text">
+                    </td>
+                    <td>
+                        <input type = "text" value = "cal">
+                    </td>
+                    
+                
+                    <tr>
+                        <td colspan = "4">Click to confirm and process your order</td>
+                        <td><button value = "cal">Total Price</button></td>
+                    </tr>                        
                 </table>
             </form>
         </div>    
-    </div>    
+    </div> 
+
     <div id = "footer">
         <footer>
-
+            <p class = copyright>
+                '© 2020 Swegga Fashion – YOUR NAME & SURNAME
+            </p>
         </footer>
     </div>
 </body>
