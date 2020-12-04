@@ -1,0 +1,49 @@
+#main{
+    margin-left:150px;
+    
+}
+#page{
+    margin:10px auto;
+    width: 710px;
+    background-color: white;
+    margin: 10px auto;
+    padding: 10px; 
+    
+}
+
+
+.sidebar{
+    height: 350px;
+    width: 300px;
+    
+}
+
+.banner{
+    height: 85px;
+    width: 300px;
+}
+
+.navigation{
+    height: 56px;
+    width: 560px;
+}
+
+
+.table,th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+h1{
+    text-align: center;
+    color: darkslateblue
+}
+
+
+#footer{
+    margin-top: 5em;
+    border-top: 2px solid grey;
+    padding-top: 7em;
+    clear: left;
+}
