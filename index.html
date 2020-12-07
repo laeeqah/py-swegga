@@ -3,104 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swegga Fashion</title>
+    <title>Laeeqah Esau-Swegga Fashion</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <div id = "page">
-        <img class="sidebar" src = "swegga.jpg">
-        <img class = "banner" src = "delivery.gif">
+
+<div id = "page">
+    <img id="sidebar" src = "swegga.jpg">
+    <img id = "banner" src = "delivery.gif">
+
+    <img class = "navigation" src ="links.gif" usemap ="#mylinks">
+    <map name = "mylinks">
+        <area href="home.html" coords="4,6,94,34" shape="rect">
+        <area href="services.html" coords="103,4,192,35" shape="rect">
+        <area href="products.html" coords="201,4,301,36" shape="rect">
+        <area href="order_status.html" coords="311,5,440,36" shape="rect">
+        <area href="contact_us.html" coords="448,5,554,35" shape="rect">
+    </map>
+
         
-            
-        <img class = "navigation" src ="links.gif" usemap ="#mylinks">
-            <map name = "mylinks">
-                <area href="home.html" coords="4,6,94,34" shape="rect">
-                <area href="services.html" coords="103,4,192,35" shape="rect">
-                <area href="products.html" coords="201,4,301,36" shape="rect">
-                <area href="order_status.html" coords="311,5,440,36" shape="rect">
-                <area href="contact_us.html" coords="448,5,554,35" shape="rect">
-            </map>
-        </div>
-        
 
 
-        <div id = "main">
-            <form>
-                <table class = "table">
-                    <caption>Product Summary</captions>
-                    <tr>
-                        <th>Description</th>
-                        <th>Size</th>
-                        <th>Colour</th>
-                        <th>Price</th>
-                        <th>Quantity</th>
-                        <th>Total</th>
-                    </tr>
-                    <tr>
-                        <td><a href = "female.html">Female Ski Jacket</a></td>
-                        <td>
-                            <select name="size" class = "dropdown">
-                                <option value = "small">Small</option>
-                                <option value = "medium">Medium</option>
-                                <option value = "large">Large</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select name = "color" class ="color">
-                                <option value = "red">Red</option>
-                                <option value = "pink">Pink</option>
-                                <option value = "black">Black</option>
-                            </select>
-                        </td>
-                        <td>R 150.95</td>
-                        <td>
-                            <input class = "input" type ="text">
-                        </td>
-                        <td>
-                            <input type = "text" value = "cal">
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td><a href = "male.html">Male Ski Jackets</a></td>
+    <div id = "main">
+        <form>
+            <table class = "table">
+                <caption>Product Summary</captions>
+                <tr>
+                    <th>Description</th>
+                    <th>Size</th>
+                    <th>Colour</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+                <tr>
+                    <td><a id = "female" href = "female.html">Female Ski Jacket</a></td>
                     <td>
                         <select name="size" class = "dropdown">
-                            <option value = "lmall">Small</option>
+                            <option value = "small">Small</option>
                             <option value = "medium">Medium</option>
                             <option value = "large">Large</option>
                         </select>
                     </td>
                     <td>
-                        <select name = "color" class ="color">
+                        <select name = "fcolor" class ="fcolor">
                             <option value = "red">Red</option>
-                            <option value = "blue">Blue</option>
-                            <option value = "white">White</option>
+                            <option value = "pink">Pink</option>
+                            <option value = "black">Black</option>
                         </select>
                     </td>
-                    <td>R180.95</td>
+                    <td class = "fjprice">R 150.95</td>
                     <td>
-                        <input class = "input" type = "text">
+                        <input id = "fqty" class = "input" type ="text" >
                     </td>
                     <td>
-                        <input type = "text" value = "cal">
+                        <label id = "fcal" class = "input" type = "text" >
                     </td>
-                    
-                
-                    <tr>
-                        <td colspan = "4">Click to confirm and process your order</td>
-                        <td><button value = "cal">Total Price</button></td>
-                    </tr>                        
-                </table>
-            </form>
-        </div>    
-    </div> 
+                </tr>
 
+                <tr>
+                    <td><a id = "male" href = "male.html">Male Ski Jackets</a></td>
+                <td>
+                    <select name="size" class = "dropdown">
+                        <option value = "small">Small</option>
+                        <option value = "medium">Medium</option>
+                        <option value = "large">Large</option>
+                    </select>
+                </td>
+                <td>
+                    <select name = "mcolor" class ="mcolor">
+                        <option value = "red">Red</option>
+                        <option value = "blue">Blue</option>
+                        <option value = "white">White</option>
+                    </select>
+                </td>
+                <td class = "mjprice">R180.95</td>
+                <td>
+                    <input id = "mqty" class = "input" type = "text" >
+                </td>
+                <td>
+                    <label id = "mcal" class = "input" type = "text">
+                </td>
+                
+            
+                <tr>
+                    <td colspan = "4">Click to confirm and process your order</td>
+                    <td><button onclick="display()">Total Price</button></td>
+                    <td><label class = "input" id = "total" type = text ></td>
+                </tr>                        
+            </table>
+        </form>
+        
+    </div> 
     <div id = "footer">
-        <footer>
-            <p class = copyright>
-                '© 2020 Swegga Fashion – YOUR NAME & SURNAME
-            </p>
-        </footer>
-    </div>
+        <p class = "copyright">'© 2020 Swegga Fashion – Laeeqah Esau</p>
+        
+    </div> 
+</div> 
+
+
+<script src = "main.js", type="text/javascript"></script>
 </body>
 </html>
